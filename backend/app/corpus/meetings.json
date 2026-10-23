@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "kind": "pre_generated_analysis",
+    "authored_against": "CONVERSATIONS.md (adapted transcripts); meeting evidence uses 1-based turn numbers from the supplied turns array",
+    "note": "M07's authoritative text arrives with delivery revision 2, so its analysis is authored against that revision."
+  },
+  "analyses": [
+    {
+      "source_type": "meeting",
+      "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+      "record_ref": "M01",
+      "applies_to_revision": 1,
+      "analysis": {
+        "summary": "Harborpath Advisory explores a referral partnership with SpendNest. The partner is interested in commission economics, wants the arrangement documented and scalable, and agreed to start partner onboarding; SpendNest committed to sending the pack and referral link.",
+        "why_it_matters": "A partner channel with an advisory firm is a distribution decision, not a customer deal. The scalability objection is the real condition of success.",
+        "evidence": [
+          {"kind": "turn", "turn": 6, "quote": "If there is a sensible commercial arrangement here, that is interesting to me.", "note": "Commercial interest is conditional, not yet a partnership agreement."},
+          {"kind": "turn", "turn": 9, "quote": "The activation payment is USD 260 when a referred company gets its account approved by our compliance partners.", "note": "Concrete commission terms depend on compliance approval, not just a referral."},
+          {"kind": "turn", "turn": 20, "quote": "It cannot depend on me manually writing every email. This needs to scale when people discover the offer through us.", "note": "The partner's central requirement for the process."},
+          {"kind": "turn", "turn": 23, "quote": "receiving funds here means bank transfers, not directly taking card payments from customers", "note": "A product limitation the partner must disclose in their own material."}
+        ],
+        "risks": ["The partner may publish an offer before the referral-link and compliance requirements are settled.", "Referred companies may lack the US-operations evidence compliance requires."],
+        "opportunities": ["The partner has an existing client flow needing business accounts, so no new demand has to be created."],
+        "uncertainties": ["No signed memorandum is in evidence; onboarding has only started.", "Referral volumes are not estimated anywhere in the transcript."],
+        "next_action": "Send the agreed pack: partner memorandum, pricing terms, referral link, onboarding requirements and the two product limitations.",
+        "action_owner": "Team member A (SpendNest)",
+        "owner_basis": "Turn 25: 'I will send the documents and the information discussed here.' Role title is not supplied.",
+        "suggested_routes": ["internal_vendor", "customer_followup"],
+        "route_rationale": "The counterparty is a referral partner, so this belongs in the partner file rather than a customer deal. Sending the pack is an explicit obligation.",
+        "route_trace": [
+          {"rule": "partner_language", "outcome": "internal_vendor", "detail": "Commission-based referral partnership."},
+          {"rule": "follow_up_promised", "outcome": "customer_followup", "detail": "Documents, link and terms promised at turn 25."}
+        ],
+        "review_status": "reviewed",
+        "review_note": "Analyst reviewed; the partner relationship and the outstanding send are explicit.",
+        "analysis_basis": "Pre-generated from the supplied transcript; no model call at runtime."
+      }
+    },
+    {
+      "source_type": "meeting",
+      "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+      "record_ref": "M02",
+      "applies_to_revision": 1,
+      "analysis": {
+        "summary": "SpendNest evaluates LedgerBridge as an electronic-invoicing vendor for a new receivables module. The discussion covers market sequencing, localisation, integration mechanics and two pricing models; SpendNest must supply invoice volumes before a proposal is possible.",
+        "why_it_matters": "This is a supplier selection for a product build, with a stated Q4 ambition that the internal owners themselves describe as movable. Sponsorship and volume inputs are the gating items.",
+        "evidence": [
+          {"kind": "turn", "turn": 11, "quote": "Has management decided to invest in this, or are you still deciding whether the project should exist at all?", "note": "The supplier surfaces the missing investment decision."},
+          {"kind": "turn", "turn": 15, "quote": "We intend to build the capability, but I would not describe the quarter as an immovable deadline.", "note": "The Q4 date is an ambition, not a commitment."},
+          {"kind": "turn", "turn": 18, "quote": "Issued volumes will be estimates because the receivables product is still being built.", "note": "The commercial input is inherently uncertain."},
+          {"kind": "turn", "turn": 31, "quote": "The basic setup begins at EUR 2,600; a more supported implementation starts at EUR 6,500", "note": "Concrete cost anchors for the decision."}
+        ],
+        "risks": ["A vendor proposal may be built on estimated volumes and then mislead the business case.", "The project competes with other Q4 work and may slip without a decision."],
+        "opportunities": ["A single integration covering Singapore, Australia and India would reduce later expansion cost."],
+        "uncertainties": ["No management approval is in evidence.", "Country-level document requirements are not yet mapped."],
+        "next_action": "Complete the volume template with received volumes from current AP data and clearly-labelled estimates for issued volumes, then brief management before the commercial call.",
+        "action_owner": "Team member A (SpendNest)",
+        "owner_basis": "Turn 32: 'Could you send the proposal before the commercial call? We need to brief management.' Note the supplier preferred a walkthrough instead.",
+        "suggested_routes": ["internal_vendor", "customer_followup"],
+        "route_rationale": "LedgerBridge is a supplier to SpendNest, not a buying customer: pricing and setup fees appear, but they are costs SpendNest would pay. The volume template is the outstanding follow-up.",
+        "route_trace": [
+          {"rule": "supplier_relationship", "outcome": "internal_vendor", "detail": "SpendNest is procuring invoicing coverage, not selling to LedgerBridge."},
+          {"rule": "follow_up_promised", "outcome": "customer_followup", "detail": "Volume template to be completed and returned."}
+        ],
+        "review_status": "reviewed",
+        "review_note": "Analyst reviewed; the direction of the commercial relationship is explicit at turn 30.",
+        "analysis_basis": "Pre-generated from the supplied transcript; no model call at runtime."
+      }
+    },
+    {
+      "source_type": "meeting",
+      "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+      "record_ref": "M03",
+      "applies_to_revision": 1,
+      "analysis": {
+        "summary": "Asterloom Systems evaluates domestic prepaid cards for travel and operating expenses. The finance lead expected a credit card, questions the accounting workflow, and challenges an annual price that moved from INR 26,000 to INR 39,000 in the same conversation. A proposal and a CFO conversation are the next gate.",
+        "why_it_matters": "This is the most active deal in the batch, and the pricing inconsistency is a credibility risk at exactly the moment the buyer asks for an attractive proposal.",
+        "evidence": [
+          {"kind": "turn", "turn": 23, "quote": "But you previously told me INR 26,000. Why has that become INR 39,000?", "note": "The buyer catches an unexplained price change."},
+          {"kind": "turn", "turn": 24, "quote": "INR 26,000 plus tax is the recurring annual subscription, and INR 13,000 is the one-time accounting integration setup.", "note": "The rep separates the two components after the challenge."},
+          {"kind": "turn", "turn": 6, "quote": "I had thought about a corporate credit card.", "note": "A product-expectation gap that could stall the deal."},
+          {"kind": "turn", "turn": 28, "quote": "Our CFO approves the larger payments.", "note": "The actual decision gate is identified."}
+        ],
+        "risks": ["Unbundled pricing presented late undermines trust in the proposal.", "If credit is a requirement, prepaid cards cannot satisfy it.", "The buyer starts with only four or five employees, limiting initial value."],
+        "opportunities": ["Monthly spend of INR 10-13 lakh and a 65-person company give a credible expansion path if the workflow fits.", "The reimbursement module could cover employees who will not receive cards."],
+        "uncertainties": ["The workflow fit is not confirmed; the buyer explicitly says they still need to decide.", "CFO approval has not happened."],
+        "next_action": "Send a proposal that shows the annual subscription, the one-time integration fee and the reimbursement option as separate lines, and address the prepaid-versus-credit expectation explicitly before the CFO conversation.",
+        "action_owner": "Team member A (SpendNest)",
+        "owner_basis": "Turn 35: 'I will send the cards proposal and information about the other modules.'",
+        "suggested_routes": ["deal_next_steps", "sales_coaching"],
+        "route_rationale": "An active evaluation with a named decision gate is a live deal. The price-change handling and the missed credit expectation are coaching evidence about how the deal was worked.",
+        "route_trace": [
+          {"rule": "commercial_terms_and_decision_gate", "outcome": "deal_next_steps", "detail": "Proposal, pricing and CFO approval all in play."},
+          {"rule": "pricing_consistency", "outcome": "sales_coaching", "detail": "Annual price quoted inconsistently within one conversation."}
+        ],
+        "review_status": "reviewed",
+        "review_note": "Analyst reviewed; the price discrepancy and the CFO gate are both explicit.",
+        "analysis_basis": "Pre-generated from the supplied transcript; no model call at runtime."
+      }
+    },
+    {
+      "source_type": "meeting",
+      "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+      "record_ref": "M04",
+      "applies_to_revision": 1,
+      "analysis": {
+        "summary": "Cedarwave Distribution is being migrated from a prepaid card programme that is closing. The customer's main condition is moving to credit rather than staying prepaid, and they already hold an INR 1.3 crore corporate credit line. Accounting integration for bank-issued cards and a department-move request remain unresolved.",
+        "why_it_matters": "This is an existing customer at risk during a forced migration, not a new deal. If credit is the deciding requirement, the current replacement does not meet it.",
+        "evidence": [
+          {"kind": "turn", "turn": 11, "quote": "moving from prepaid to credit is the main issue for us", "note": "The customer states the decisive requirement."},
+          {"kind": "turn", "turn": 22, "quote": "We already have a corporate credit line of about INR 1.3 crore.", "note": "Credit capacity exists; the gap is cards and visibility."},
+          {"kind": "turn", "turn": 25, "quote": "the available limit would not be shown here", "note": "A concrete limitation of the proposed bank-card feed."},
+          {"kind": "turn", "turn": 26, "quote": "Then what do we gain by adding SpendNest? We can already see transactions in the bank portal.", "note": "The value proposition is being questioned directly."}
+        ],
+        "risks": ["Migration could complete without resolving the credit requirement.", "Users must redo identity checks, adding friction to an already strained relationship.", "Department-level access problems are unresolved."],
+        "opportunities": ["Receipts, business purpose and exception review are the defensible value if the bank-card feed works.", "A mixed estate of bank credit cards and prepaid cards could retain the account."],
+        "uncertainties": ["Whether already-issued bank cards can join the transaction feed is unconfirmed.", "Whether accounting sync can reconcile source balances for bank cards is unconfirmed."],
+        "next_action": "Confirm feed eligibility and accounting-sync feasibility in writing before the migration deadline, and propose the mixed card model with a clear statement of what SpendNest adds beyond the bank portal.",
+        "action_owner": "Team member A (SpendNest)",
+        "owner_basis": "Turn 23 and turn 28: the rep commits to checking eligibility and accounting questions with the programme team.",
+        "suggested_routes": ["customer_success", "customer_followup"],
+        "route_rationale": "The conversation is about an existing customer's forced migration, access corrections and product limitations. Confirming feasibility is an owed follow-up.",
+        "route_trace": [
+          {"rule": "existing_customer_migration", "outcome": "customer_success", "detail": "Card programme closing; identity checks and department moves unresolved."},
+          {"rule": "follow_up_promised", "outcome": "customer_followup", "detail": "Eligibility and accounting answers promised."}
+        ],
+        "review_status": "reviewed",
+        "review_note": "Analyst reviewed; the customer's credit requirement and the open feasibility questions are explicit.",
+        "analysis_basis": "Pre-generated from the supplied transcript; no model call at runtime."
+      }
+    },
+    {
+      "source_type": "meeting",
+      "source_id": "657b9e9d-9472-5b01-a127-a648ad7e8cf7",
+      "record_ref": "M06",
+      "applies_to_revision": 1,
+      "analysis": {
+        "summary": "A discovery conversation with a branch finance lead at Mapletrail Services about receivables automation. The prospect describes manual invoice preparation, contract checks and collections follow-up, estimates 390-520 invoices a month, and asks how payment data is protected before agreeing to receive material.",
+        "why_it_matters": "A large, well-described manual process with no current evaluation. Security is raised unprompted, so it will gate any next step.",
+        "evidence": [
+          {"kind": "turn", "turn": 10, "quote": "One expense-recovery invoice has been outstanding for months even though the same client pays the normal service invoices.", "note": "A concrete unresolved collection problem."},
+          {"kind": "turn", "turn": 15, "quote": "So perhaps nearer 390–520 a month overall?", "note": "The volume estimate is the rep's correction, accepted only approximately."},
+          {"kind": "turn", "turn": 31, "quote": "Confidentiality is important. Payment information is sensitive.", "note": "Security is raised by the prospect, not the seller."},
+          {"kind": "turn", "turn": 33, "quote": "Please send the information and we can stay in touch.", "note": "A low-commitment follow-up, not a scheduled evaluation."}
+        ],
+        "risks": ["Invoice volumes are rough conversational estimates, not a report.", "The central finance team owns much of the process, limiting this contact's authority."],
+        "opportunities": ["The collections exception and cash-application examples map directly to the receivables proposition."],
+        "uncertainties": ["Whether the central team is already evaluating automation is unknown.", "The prospect is a branch finance lead, not a confirmed budget holder."],
+        "next_action": "Send the receivables and security material, and ask for an introduction to the central finance owner rather than assuming this contact can decide.",
+        "action_owner": "Team member A (SpendNest)",
+        "owner_basis": "Turn 29 and turn 33: the rep offers material and the prospect asks for it.",
+        "suggested_routes": ["deal_next_steps", "customer_followup"],
+        "route_rationale": "A quantified process problem and a request for material indicate a real opportunity, but no evaluation is agreed. The follow-up is the immediate obligation.",
+        "route_trace": [
+          {"rule": "quantified_process_problem", "outcome": "deal_next_steps", "detail": "Invoice volume and manual collections described in detail."},
+          {"rule": "material_requested", "outcome": "customer_followup", "detail": "Prospect asked for information at turn 33."}
+        ],
+        "review_status": "reviewed",
+        "review_note": "Analyst reviewed; volumes are explicitly labelled estimates and the contact's authority is limited.",
+        "analysis_basis": "Pre-generated from the supplied transcript; no model call at runtime."
+      }
+    },
+    {
+      "source_type": "meeting",
+      "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+      "record_ref": "M07",
+      "applies_to_revision": 2,
+      "analysis": {
+        "summary": "Willowfield Trust walks through four live product defects: an event-payment description that reverts after saving, an attachment upload that fails on the Recreate payment route, reimbursements stuck in Processing, and a Mark as paid form that carries the previous payment amount into the next record.",
+        "why_it_matters": "Three of the four issues force the customer into repeated manual work, and the carried-forward amount creates a real risk of paying the wrong value. This is a support record with money-handling impact, not a sales opportunity.",
+        "evidence": [
+          {"kind": "turn", "turn": 3, "quote": "The field still shows the earlier wording. So the change is not appearing after you save, is that right?", "note": "Reproduced description-save defect."},
+          {"kind": "turn", "turn": 12, "quote": "It uploads here. This route works, so it is not that I cannot attach a file anywhere.", "note": "Isolates the failure to the Recreate payment route; a workaround exists."},
+          {"kind": "turn", "turn": 19, "quote": "The payments appear to have been released but are stuck showing Processing.", "note": "Reimbursement state is wrong for more than one user."},
+          {"kind": "turn", "turn": 22, "quote": "The amount from the previous item appears in the next one.", "note": "Carried-forward amount forces cancellation and re-entry."}
+        ],
+        "risks": ["A carried-forward amount could cause an incorrect payment if the operator does not notice.", "The attachment workaround adds steps to every recreated payment.", "Reimbursements stuck in Processing delay employee repayment."],
+        "opportunities": ["One consolidated defect report with reproduction steps can cover all four issues."],
+        "uncertainties": ["No root cause or fix commitment is in evidence; the rep only promises investigation.", "Whether other tenants see the same amount-carryover bug is unknown."],
+        "next_action": "Log all four defects with reproduction steps, prioritise the amount-carryover issue, and give the customer a dated update rather than an open-ended promise.",
+        "action_owner": "Team member A (SpendNest)",
+        "owner_basis": "Turn 25 and turn 27: the rep commits to reporting the issues and coming back after team confirmation.",
+        "suggested_routes": ["customer_success"],
+        "route_rationale": "Every substantive turn is a customer reporting broken product behaviour. There is no commercial content, so a deal route would be wrong even though the meeting is with a customer.",
+        "route_trace": [
+          {"rule": "product_issue_language", "outcome": "customer_success", "detail": "Four reproduced defects, one with a workaround."},
+          {"rule": "no_commercial_content", "outcome": "customer_success", "detail": "No pricing, proposal or renewal discussion in the transcript."}
+        ],
+        "review_status": "needs_review",
+        "review_note": "Text arrived in delivery revision 2. Analysis refreshed against the new transcript; confirm the route and defect priority.",
+        "analysis_basis": "Pre-generated from the revision-2 transcript; no model call at runtime."
+      }
+    },
+    {
+      "source_type": "meeting",
+      "source_id": "4b5b9192-f3fc-505a-8e77-4d2ffaa54594",
+      "record_ref": "M09",
+      "applies_to_revision": 1,
+      "analysis": {
+        "summary": "An account-setup and access session covering two companies. The Brookmint Holdings invitation fails, a freshly issued reset token is reported expired, and the customer raises a valid concern that a shared mailbox administrator would give the AP officer unintended rights. A Northkite accounting correction was self-resolved.",
+        "why_it_matters": "The customer cannot access one of their two accounts, and the permission design forces a trust-based workaround they have already rejected. Onboarding is blocked.",
+        "evidence": [
+          {"kind": "turn", "turn": 12, "quote": "If the shared address is configured as an administrator and they can use it, yes, it would have those rights.", "note": "Confirms the permission overlap the customer is worried about."},
+          {"kind": "turn", "turn": 17, "quote": "I do not want this to depend on trusting someone not to use access that is available.", "note": "The customer rejects the trust-based workaround."},
+          {"kind": "turn", "turn": 21, "quote": "It says the token has expired. This is the fresh message we just received.", "note": "A newly issued token fails immediately."},
+          {"kind": "turn", "turn": 31, "quote": "I will check the expired-token problem for Brookmint Holdings with the team", "note": "No fix is committed, only an update."}
+        ],
+        "risks": ["Onboarding is blocked on the larger of the two accounts.", "A permission workaround that relies on trust is unacceptable to the customer and may become a security finding.", "Repeated expired tokens erode confidence in the setup process."],
+        "opportunities": ["Separate work identities per company would also solve the eventual handover problem."],
+        "uncertainties": ["Why a fresh token expires is not diagnosed in the call.", "Whether the customer's IT team has changed mailbox access is unknown."],
+        "next_action": "Escalate the expired-token defect with the exact timestamp, and propose separate administrator identities per company instead of a shared mailbox.",
+        "action_owner": "Team member A (SpendNest)",
+        "owner_basis": "Turn 31: the rep commits to checking the expired-token problem with the team.",
+        "suggested_routes": ["customer_success", "needs_review"],
+        "route_rationale": "The conversation is an existing customer blocked by access and permission defects. The root cause and the right access model need a human decision, so it is also flagged for review.",
+        "route_trace": [
+          {"rule": "blocked_access", "outcome": "customer_success", "detail": "Invitation and reset token both fail."},
+          {"rule": "permission_model_unresolved", "outcome": "needs_review", "detail": "Shared-mailbox administrator rights remain a security concern."}
+        ],
+        "review_status": "needs_review",
+        "review_note": "Access defect has no diagnosis; the permission design needs a decision outside the call.",
+        "analysis_basis": "Pre-generated from the supplied transcript; no model call at runtime."
+      }
+    },
+    {
+      "source_type": "meeting",
+      "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+      "record_ref": "M10",
+      "applies_to_revision": 1,
+      "analysis": {
+        "summary": "An internal billing walkthrough for SpendNest team members covering invoice generation, due dates versus collection periods, zero-value invoices, the three-attempt deduction cycle and the manual unfreeze procedure. No customer or prospect is present.",
+        "why_it_matters": "This is internal enablement. It matters because the described recovery flow depends on manual steps that can leave the next billing date wrong.",
+        "evidence": [
+          {"kind": "turn", "turn": 8, "quote": "The displayed due date and the allowed collection period are not always the same thing.", "note": "A reconciliation trap in the billing process."},
+          {"kind": "turn", "turn": 15, "quote": "Suppose the invoice is INR 6,240 but the wallet contains INR 6,110. The deduction fails and a notification goes out.", "note": "Concrete illustration of the failure cycle."},
+          {"kind": "turn", "turn": 18, "quote": "Operations also needs to adjust the next billing date manually.", "note": "A manual step that is easy to miss after recovery."},
+          {"kind": "turn", "turn": 20, "quote": "I will request the back-office access separately for the next training session.", "note": "Training is incomplete; a follow-up session is owed."}
+        ],
+        "risks": ["Manual billing-date adjustment after an unfreeze can produce a wrong next cycle.", "A frozen account is not fully recovered by topping up; the customer must contact operations."],
+        "opportunities": ["Written checklists for unfreeze and billing-date correction would reduce operational error."],
+        "uncertainties": ["No customer impact is evidenced; this is a process description.", "The attendees' roles beyond Team member B and C are not supplied."],
+        "next_action": "Publish the unfreeze and billing-date checklist and schedule the back-office access session.",
+        "action_owner": "Team member A (SpendNest)",
+        "owner_basis": "Turn 20: the trainer commits to requesting back-office access for the next session.",
+        "suggested_routes": ["internal_vendor"],
+        "route_rationale": "Internal enablement with no customer or partner counterparty. Routing it as a deal or a customer follow-up would misstate who owns the action.",
+        "route_trace": [
+          {"rule": "internal_audience", "outcome": "internal_vendor", "detail": "Trainer and SpendNest team members only; no external party."},
+          {"rule": "process_risk_noted", "outcome": "internal_vendor", "detail": "Manual billing-date correction after unfreeze."}
+        ],
+        "review_status": "reviewed",
+        "review_note": "Analyst reviewed; no external counterparty appears in the transcript.",
+        "analysis_basis": "Pre-generated from the supplied transcript; no model call at runtime."
+      }
+    }
+  ]
+}

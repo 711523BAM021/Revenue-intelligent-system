@@ -1,0 +1,209 @@
+{
+  "brief": {
+    "date": "2026-08-21",
+    "title": "Manager brief - 21 August 2026",
+    "standfirst": "Selected-record brief for one local day (Asia/Kolkata). Activity counts are computed from the imported records; the narrative below was authored against the 18 supplied conversations after applying delivery revision 2.",
+    "scope_note": "This is a deliberately selected sample of 44 records, not a whole-team day and not a performance ranking. Missing text is not evidence that a conversation failed.",
+    "sections": [
+      {
+        "id": "important",
+        "title": "Conversations that need a decision",
+        "intro": "Ranked by consequence, not by recency.",
+        "items": [
+          {
+            "record_ref": "M07",
+            "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+            "text": "Willowfield Trust reported four live defects, including a Mark as paid form that carries the previous amount into the next payment. Treat the amount carryover as a money-risk defect and give the customer a dated update.",
+            "evidence": [{"kind": "turn", "turn": 22, "quote": "The amount from the previous item appears in the next one."}]
+          },
+          {
+            "record_ref": "M03",
+            "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+            "text": "Asterloom challenged an annual price that moved from INR 26,000 to INR 39,000 inside the same call. Approve a clean, itemised proposal before it reaches their CFO.",
+            "evidence": [{"kind": "turn", "turn": 23, "quote": "But you previously told me INR 26,000. Why has that become INR 39,000?"}]
+          },
+          {
+            "record_ref": "M04",
+            "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+            "text": "Cedarwave's forced card migration is blocked on credit: they already hold an INR 1.3 crore credit line and the replacement is still prepaid. Confirm the bank-card feed and accounting-sync answers in writing before the migration date.",
+            "evidence": [{"kind": "turn", "turn": 11, "quote": "moving from prepaid to credit is the main issue for us"}]
+          },
+          {
+            "record_ref": "M09",
+            "source_id": "4b5b9192-f3fc-505a-8e77-4d2ffaa54594",
+            "text": "Brookmint Holdings cannot be accessed: a freshly issued reset token expired immediately. Escalate with the exact timestamp and stop proposing a shared-mailbox administrator the customer has already rejected.",
+            "evidence": [{"kind": "turn", "turn": 21, "quote": "It says the token has expired. This is the fresh message we just received."}]
+          }
+        ]
+      },
+      {
+        "id": "followups",
+        "title": "Follow-ups owed today or next week",
+        "intro": "Only commitments actually made in the conversation are listed.",
+        "items": [
+          {
+            "record_ref": "M01",
+            "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+            "text": "Send Harborpath Advisory the partner pack: memorandum, commission terms, referral link, onboarding requirements and the two product limitations.",
+            "evidence": [{"kind": "turn", "turn": 25, "quote": "I will send the documents and the information discussed here."}]
+          },
+          {
+            "record_ref": "M07",
+            "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+            "text": "Report the description-save, attachment-upload and reimbursement-processing defects separately, with reproduction steps.",
+            "evidence": [{"kind": "turn", "turn": 27, "quote": "I will send the details to the team, get their confirmation and come back to you."}]
+          },
+          {
+            "record_ref": "C07",
+            "source_id": "428817fa-7e9e-5418-a7d4-bb396d28dfbf",
+            "text": "Send the Willowbank Advisory partnership proposal before the agreed Monday call.",
+            "evidence": [{"kind": "quote", "quote": "could I call on Monday"}]
+          },
+          {
+            "record_ref": "C03",
+            "source_id": "20d509ba-d589-5334-9aef-ea4ce6105b1a",
+            "text": "Email Milan on developer access and event notifications; the call audio was unusable and price remains the open objection.",
+            "evidence": [{"kind": "quote", "quote": "Could we do this by email?"}]
+          }
+        ]
+      },
+      {
+        "id": "coaching",
+        "title": "Coaching observations",
+        "intro": "Observations about approach, not a ranking of people.",
+        "items": [
+          {
+            "record_ref": "C01",
+            "source_id": "2ec4404c-beee-5377-a63c-aab701da08ed",
+            "text": "The prospect had to ask three times why they were called. Rehearse a provenance answer and stop the pitch when consent is contested.",
+            "evidence": [{"kind": "quote", "quote": "I didn't ask for this call, and I'm not interested."}]
+          },
+          {
+            "record_ref": "C05",
+            "source_id": "75a6b94f-7717-5cfb-9e41-0acc94415e17",
+            "text": "Three capabilities were pitched after the prospect said they already had each one. Qualify the incumbent before demonstrating.",
+            "evidence": [{"kind": "quote", "quote": "We have that too."}]
+          },
+          {
+            "record_ref": "M03",
+            "source_id": "398672e7-62dd-5afd-846d-0237d49792fb",
+            "text": "Always quote the recurring fee and the one-time integration fee as separate lines; combining them produced a price change mid-call.",
+            "evidence": [{"kind": "turn", "turn": 24, "quote": "INR 26,000 plus tax is the recurring annual subscription, and INR 13,000 is the one-time accounting integration setup."}]
+          },
+          {
+            "record_ref": "C10",
+            "source_id": "b747f592-810e-583c-9b81-8db5ab035806",
+            "text": "The contact had left the company. Check contact freshness before dialling, and respect a refusal of a scheduled follow-up.",
+            "evidence": [{"kind": "quote", "quote": "I don't work there anymore."}]
+          }
+        ]
+      },
+      {
+        "id": "customer_issues",
+        "title": "Customer issues and unresolved risk",
+        "intro": "Existing customers only.",
+        "items": [
+          {
+            "record_ref": "M07",
+            "source_id": "4f304fff-fd40-5cfc-a366-0a134c445c2a",
+            "text": "Amount carryover in Mark as paid, plus reimbursements stuck in Processing for this customer and at least one other user.",
+            "evidence": [{"kind": "turn", "turn": 19, "quote": "The payments appear to have been released but are stuck showing Processing."}]
+          },
+          {
+            "record_ref": "M09",
+            "source_id": "4b5b9192-f3fc-505a-8e77-4d2ffaa54594",
+            "text": "Access to the larger of two company accounts is blocked, and the shared-mailbox permission workaround is unacceptable to the customer.",
+            "evidence": [{"kind": "turn", "turn": 17, "quote": "I do not want this to depend on trusting someone not to use access that is available."}]
+          },
+          {
+            "record_ref": "M04",
+            "source_id": "b0f79b3d-37ba-52f9-b2bc-58b159dd6d91",
+            "text": "A forced migration asks users to repeat identity checks while the customer's stated requirement, credit, is still unmet.",
+            "evidence": [{"kind": "turn", "turn": 6, "quote": "Users need to complete identity checks again because the provider changes."}]
+          }
+        ]
+      },
+      {
+        "id": "internal",
+        "title": "Internal and vendor matters",
+        "intro": "No customer deal belongs in this list.",
+        "items": [
+          {
+            "record_ref": "M02",
+            "source_id": "1a21c409-c050-5787-90af-2667e057e1b6",
+            "text": "LedgerBridge needs a volume template before pricing. Management has not been recorded as approving the receivables build, and the Q4 date is explicitly movable.",
+            "evidence": [{"kind": "turn", "turn": 15, "quote": "We intend to build the capability, but I would not describe the quarter as an immovable deadline."}]
+          },
+          {
+            "record_ref": "M10",
+            "source_id": "337f297d-9385-5b82-9e54-5019c1ed912c",
+            "text": "Publish the unfreeze and billing-date checklist; the current recovery flow relies on manual date correction.",
+            "evidence": [{"kind": "turn", "turn": 18, "quote": "Operations also needs to adjust the next billing date manually."}]
+          },
+          {
+            "record_ref": "M01",
+            "source_id": "cb5cecac-e68d-52b7-b10b-b0c748efc467",
+            "text": "The referral link must work without the partner writing every introduction, or the channel will not scale.",
+            "evidence": [{"kind": "turn", "turn": 20, "quote": "It cannot depend on me manually writing every email."}]
+          }
+        ]
+      }
+    ],
+    "uncertainty": {
+      "title": "What this brief cannot tell you",
+      "items": [
+        "No authoritative CRM or opportunity table is supplied, so no pipeline value, stage or account link is asserted anywhere.",
+        "Meeting organisers are labelled as organisers only. No organiser-to-speaker mapping exists, so no one is called the salesperson on a meeting.",
+        "Twenty-six records have no usable supplied text. They carry an intake state, not a conclusion; missing text is not treated as a failed conversation.",
+        "C01, C02 and C04 contain one side of a conversation or no business content, so their conclusions are limited to what is written.",
+        "Source-reported call connection flags are stored classifications and may disagree with the text; they are shown separately from transcript evidence."
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "finding-pricing",
+      "title": "A live deal's annual price changed inside one call",
+      "observation": "The Asterloom buyer was told an annual figure and then challenged why it had risen; the rep explained that the first number had silently bundled a one-time integration fee.",
+      "why_it_matters": "The proposal now has to rebuild trust with a CFO who has not yet seen it, and the buyer explicitly asked for an attractive proposal including that setup charge.",
+      "evidence": {"kind": "turn", "record_ref": "M03", "turn": 23, "quote": "But you previously told me INR 26,000. Why has that become INR 39,000?"},
+      "affected_surface": "Deal next steps export for M03, the Sales coaching section of the manager brief, and the routing rule that sends pricing conversations to deal review.",
+      "validated_against": "M03 turns 21-25 in the supplied transcript; the reconciliation is in turn 24."
+    },
+    {
+      "id": "finding-carryover",
+      "title": "A payment form can reuse the previous payment amount",
+      "observation": "Willowfield Trust showed that Mark as paid pre-fills the amount from the previously opened payment, forcing the user to cancel and reopen the form for every item.",
+      "why_it_matters": "This is not cosmetic friction: an operator who does not notice can pay the wrong amount. It deserves priority above the other three defects in the same call.",
+      "evidence": {"kind": "turn", "record_ref": "M07", "turn": 22, "quote": "The amount from the previous item appears in the next one."},
+      "affected_surface": "Customer success export for M07, the top item in the manager brief's decision list, and the M07 human-review flag that appears when revision 2 adds the transcript.",
+      "validated_against": "M07 turns 20-25; the rep restates the refresh failure at turn 23 and commits to a separate report at turn 25."
+    },
+    {
+      "id": "finding-credit",
+      "title": "A forced migration does not meet the customer's stated requirement",
+      "observation": "Cedarwave must move off a closing prepaid programme, but their main condition is credit, they already hold an INR 1.3 crore credit line, and the proposed replacement is still prepaid.",
+      "why_it_matters": "The customer asked what SpendNest adds beyond their bank portal. Without a confirmed bank-card feed and accounting sync, a retention conversation can turn into a churn conversation.",
+      "evidence": {"kind": "turn", "record_ref": "M04", "turn": 11, "quote": "moving from prepaid to credit is the main issue for us"},
+      "affected_surface": "Customer success export for M04, the migration risk item in the customer-issues section, and the rule that an existing customer's migration is routed to customer success rather than a new deal.",
+      "validated_against": "M04 turns 9-13 and 22-26; the rep does not promise credit and cannot show the available limit."
+    }
+  ],
+  "rejected_decision": {
+    "title": "Rejected: routing LedgerBridge to Deal next steps",
+    "alternative": "Route M02 to Deal next steps because the transcript contains pricing, setup fees, a Q4 timeline and a proposal request.",
+    "why_rejected": "SpendNest is the buyer in that conversation. At turn 30 the SpendNest lead confirms the commercial relationship is SpendNest providing the capability to its own customers, with LedgerBridge as the supplier. Keyword routing sees 'proposal', 'pricing' and 'setup fee' and would file a procurement decision as a sales opportunity, inflating the deal count and putting a supplier negotiation in front of a sales manager as revenue.",
+    "trade_off": "The record is split across internal/vendor and customer follow-up, so its commercial analysis sits in a separate folder from deals. A manager scanning only deal outputs will not see a EUR 6,500 implementation cost decision there; the brief therefore lists it explicitly under internal and vendor matters.",
+    "where_it_appears": "The routing taxonomy's internal/vendor definition, M02's route rationale, the deterministic supplier guardrail in the routing engine, and the manager brief's internal section.",
+    "screen": "Routing & Review -> M02, and the Manager Brief -> Internal and vendor matters."
+  },
+  "metrics_notes": [
+    {"metric": "Selected records", "definition": "Distinct (source_type, source_id) pairs after applying the highest revision received. Repeated imports never add to this count."},
+    {"metric": "Usable supplied text", "definition": "A call with a nonblank payload.transcript, or a meeting with at least one nonblank turn in transcript_payload.turns."},
+    {"metric": "Transcript coverage", "definition": "Usable supplied texts divided by the unique selected records in the same filter. The denominator is always shown next to the percentage."},
+    {"metric": "Needs review", "definition": "Records whose current review state is needs_review, plus records still awaiting usable text. Reviewed records are excluded even if they carry a needs_review route."},
+    {"metric": "Source-reported connection rate", "definition": "Calls with is_connected = true divided by calls whose is_connected is not null. Unknown counts are shown separately; this is a stored classification, not a transcript finding."},
+    {"metric": "Route assignments", "definition": "Counts of effective routes (manual override if present, otherwise the automated suggestion). Because a record can hold several routes, assignments can exceed records."},
+    {"metric": "Reporting period", "definition": "21 August 2026 in Asia/Kolkata. Calls are grouped on started_at, meetings on starts_at; delivery time (exported_at) is never used."}
+  ]
+}

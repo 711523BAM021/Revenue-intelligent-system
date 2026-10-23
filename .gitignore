@@ -1,0 +1,22 @@
+# dependencies / environments
+node_modules/
+backend/.venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# local state
+backend/var/
+*.db
+*.db-wal
+*.db-shm
+
+# generated
+exports/
+frontend/dist/
+
+# secrets (none are required, but never commit one)
+.env
+.env.*
+.dev.vars
