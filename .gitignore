@@ -14,7 +14,10 @@ backend/var/
 
 # generated
 exports/
-frontend/dist/
+
+# frontend/dist is committed on purpose: the Render deploy serves it without
+# running Node. Rebuild and commit it after changing frontend source:
+#   cd frontend && npm ci && npm run build
 
 # secrets (none are required, but never commit one)
 .env

@@ -82,6 +82,33 @@ cd ../backend && .venv/bin/python -m uvicorn app.main:app --port 8000
 No API keys, credentials or paid services are required. There is no model call anywhere in
 the running application.
 
+### Deploy on Render
+
+The repo ships a Render blueprint (`render.yaml`): one Python web service that serves the API
+at `/api` and the built React app at `/`. The frontend is built into `frontend/dist` and that
+output is committed, so the deploy needs no Node.
+
+1. Render dashboard → **New → Blueprint** → pick this repo (branch `main`) → **Apply**.
+   Or **New → Web Service** with:
+   - Runtime: **Python 3**
+   - Build command: `pip install -r backend/requirements.txt`
+   - Start command: `cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+   - Health check path: `/api/healthz`
+2. Wait for the first deploy, then open the service URL. The workspace starts empty:
+   go to **Import History → Load post-update demo state**.
+
+Notes:
+
+- `PYTHON_VERSION` (or `.python-version`) is pinned to 3.12; Render's default is newer.
+- On the free plan the filesystem is ephemeral: each deploy or restart starts from an empty
+  SQLite file, so reload the demo state. A paid instance with a 1 GB disk mounted at `/var/rii`
+  plus `RII_DB_PATH=/var/rii/revenue_intelligence.db` and
+  `RII_EXPORT_DIR=/var/rii/exports` keeps state and exports.
+- Every request is same-origin, so `RII_ALLOWED_ORIGINS` only needs setting if you host the
+  frontend separately (then also set `VITE_API_BASE_URL` and rebuild `frontend/dist`).
+- If you change the frontend, rebuild and commit `frontend/dist`:
+  `cd frontend && npm ci && npm run build`.
+
 ### Dataset locations
 
 ```

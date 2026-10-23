@@ -1,0 +1,13 @@
+# Render blueprint: one Python web service serving the API at /api and the
+# built React app at / (frontend/dist is committed, so the build needs no Node).
+services:
+  - type: web
+    name: revenue-intelligence
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
